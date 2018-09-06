@@ -23,13 +23,15 @@ class Products extends Component{
        .catch( error => console.log(error) );
     }
 
-    
-
     static navigationOptions = {
         title: 'Product List',
         headerStyle:{
             backgroundColor: 'red',
-            borderBottomColor: '#2B1FA2',
+        },
+        headerTintColor: '#FFF',            
+        headerTitleStyle: {
+            fontWeight: '500',
+            fontSize: 20,
         }
     }
 

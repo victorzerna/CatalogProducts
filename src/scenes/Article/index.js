@@ -10,6 +10,22 @@ class Article extends Component {
     constructor(props) {
         super(props);
     }   
+
+    static navigationOptions = {
+        title: 'Product Description',
+        headerStyle:{
+            backgroundColor: 'red',
+            borderBottomColor: '#2B1FA2',
+        },
+        headerTintColor: '#FFF',            
+        headerTitleStyle: {
+            fontWeight: '500',
+            fontSize: 20,
+        }
+    }
+
+
+
     render() {
         return (
             <View>

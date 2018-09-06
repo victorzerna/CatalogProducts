@@ -21,7 +21,6 @@ const ItemProduct = ( props ) => (
                 <Text style={styles.productName}> {props.product.name}</Text>
                 <Text style={styles.productPrice}> {props.product.price}</Text>
                 
-                
                 <View style={styles.container}>
                     <TouchableOpacity onPress={() => { props.navigation.navigate('ShoppingScreen')}}>
                         <Image
@@ -31,16 +30,6 @@ const ItemProduct = ( props ) => (
                     </TouchableOpacity>
                     
                 </View>
-                
-                
-                {/*<Button
-                    image={'https://s7d5.scene7.com/is/image/Specialized/95318-51_CAM-FSR-WMN_COMP-27-5_CSTBLU-ACDLAVA_HERO?$hybris-hd$'}
-                    onPress={ () => { props.navigation.navigate('ContactsScreen',{ name: 'MTB'}) } }
-                />
-                */}
-
-
-
             </View>
             
         </View>
@@ -57,9 +46,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     image: {
-        width: 140,
-        height: 70,
-        borderRadius: 35,
+        width: 80,
+        height: 80,
+        borderRadius: 8,
         padding: 5,
         margin: 5
     },
