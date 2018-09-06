@@ -5,7 +5,7 @@ import { View, Text, StyleSheet, Image, Button, TouchableOpacity, TouchableHighl
 // create a component
 const ItemProduct = ( props ) => (
     <TouchableHighlight
-    onPress = {() => props.navigation.navigate('ArticleScreen')}
+    onPress = {() => props.navigation.navigate('ArticleScreen', { id: props.product._id })}
     underlayColor="#CCC"
     >
     
@@ -14,12 +14,12 @@ const ItemProduct = ( props ) => (
             <View>
                 <Image
                     style={ styles.image}
-                    source={{ uri: props.contact.photo }}
+                    source={{ uri: props.product.avatar }}
                 />
             </View>
             <View style={ styles.content}>
-                <Text style={styles.productName}> {props.contact.name}</Text>
-                <Text style={styles.productPrice}> {props.contact.price}</Text>
+                <Text style={styles.productName}> {props.product.name}</Text>
+                <Text style={styles.productPrice}> {props.product.price}</Text>
                 
                 
                 <View style={styles.container}>
